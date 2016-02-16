@@ -44,15 +44,11 @@ def main(argv):
 				location = samples_meta[s]
 			print s, barcode, location
 		
-		
-		
-		
-		
-		
-	
 
 if __name__ == "__main__":
 	if len(sys.argv) == 1:
-		sys.exit("python barcode_vertical_to_coil.py [vertical csv - no spaces in col1, col2=int] [num targets (int)]")
+		sys.exit("""This script converts a vertical list of sample,assay #, assay call into the correct input format for COIL.
+		
+		python barcode_vertical_to_coil.py [vertical csv - no spaces in column1, column2=int] [num targets (int)]""")
 	else:
 		main(sys.argv[1:])
